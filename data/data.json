@@ -1,0 +1,15 @@
+{"nodes": [
+    {"name":"UCEF GmbH", "size":1.5}, 
+    {"name":"Statistik", "size":0.9}, 
+    {"name":"Software", "size":1.2}, 
+    {"name":"Gesundheitswesen", "size":1}
+], 
+"links": [
+    {"source":2, "target":1, "dist":1.9},
+    {"source":3, "target":1, "dist":1.7},
+    {"source":2, "target":3, "dist":2.3},
+    {"source":0, "target":1, "dist":1.1},
+    {"source":0, "target":2, "dist":0.9},
+    {"source":0, "target":3, "dist":0.7}
+]
+}
