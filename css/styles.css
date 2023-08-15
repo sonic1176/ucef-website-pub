@@ -10,7 +10,7 @@ html {
     height:100%;
 }
 
-h2, h3 {
+h2, h3, h4 {
     font-family: 'calibri','microsoft sans serif',sans-serif;
     margin: 10px 10px;
 }
@@ -36,7 +36,8 @@ th {
     position: sticky;
     top: 0;
   }
-ul {padding-inline-start: 15px;
+ul {margin: 10px 10px;
+    padding-inline-start: 15px;
     margin-block-start: 0;
     margin-block-end: 0;
     list-style-type:square;}
