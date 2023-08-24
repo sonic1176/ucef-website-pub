@@ -14,7 +14,7 @@ h2, h3, h4 {
     font-family: 'calibri','microsoft sans serif',sans-serif;
     margin: 10px 10px;
 }
-h2 {
+h2, h3 {
     color: #f28505;
     font-style: italic;
 }
