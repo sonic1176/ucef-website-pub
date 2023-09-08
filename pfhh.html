@@ -5,6 +5,10 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body style="overflow-y: auto;" link=#7c2b36 vlink=#7c2b36>
+    <div id="mod" class="modal">
+        <span class="close">&times;</span>
+        <img id="img1" class="modImg">
+    </div>
     <div style="margin-left: auto; margin-right: auto; width:80%; height: 100%">
         <h2>Projekte zur Verbesserung der Händehygiene</h2>
         <hr>
@@ -24,7 +28,8 @@
         <p>Ziel des Projektes &bdquo;StopInfekt&rdquo; ist es, ein medizinisch-technisches Kooperationsnetzwerk aus Wirtschaft und Wissenschaft zu etablieren, das digitale Maßnahmen zur Verbesserung der Händehygiene entwickelt und unterstützt. In &bdquo;StopInfekt&rdquo; werden technologische Maßnahmen zur dauerhaften Umsetzung der Händehygiene nach den Kriterien der WHO entwickelt, pilotiert und als demonstrierbare Referenzlösung zur Verfügung gestellt. Technischer Ausgangspunkt ist eine Installation, die erstmalig über unmittelbare individuelle Rückkopplung an das Klinikpersonal aktiv eine stetige Verbesserung der Händehygiene bewirkt.</p>
         <ul><ul>
             <li>Pilotbetrieb in BDH-Klinik Greifswald und Kreiskrankenhaus Demmin</li>
-            <li>Beispielhaftes Monitoring in einer simulierten Station <a href="https://data.stopinfekt.de">https://data.stopinfekt.de</a></li>
+            <li>Beispielhaftes Monitoring in einer simulierten Station:<br /><br /> 
+                <img id="preImg" src="img/monitor.png" style="max-width: 300px;transition: 0.3s; cursor:pointer">
         </ul></ul>
         <h3>PETRA</h3>
         <p>Im Projekt PETRA werden Patientenzimmer so ausgestattet, das sich Patienten mit Demenz selbst besser darin zurecht finden können. Die Pflegekräfte sollen außerdem entlastet werden und mehr Qualitätszeit mit ihren Patienten umsetzen können. Die Händedesinfektion steht dabei im Fokus auch für die Patientensicherheit zu sorgen, in dem das medizinische Personal durch eine digitale Händedesinfektionserfassung unterstützt wird.</p>
@@ -36,6 +41,19 @@
         <p>Der technische Lösungsansatz des Anreiz- und Dokumentationssystems besteht in einer drahtlos vernetzten Installation digitaler Sensor- und Interaktionskomponenten. Es ist vorgesehen, Daten aus externen Quellen (z. B. Gebäudeautomation) mit den speziell erhobenen Hygieneparametern im Lagebild zu fusionieren. Eine vollständige Abbildung der WHO-Indikationen für die korrekte Händehygiene sowie die Nutzung datenanalytischer Methoden zur Ermittlung des situations- und ortsbezogenen Infektionsrisikos werden ebenfalls im Vorhaben angestrebt.</p>
         <p>Das Projekt wird sich medizinisch-menschlich durch weniger Krankenhausinfektionen und geringere Todesfälle auszahlen. Wirtschaftlich werden erhebliche Kostenvorteile für das Gesundheitssystem durch die Reduktion nosokomialer Infektionen und multiresistenter Erreger verwirklicht.</p>
     </div>
+    <script>
+        var modal = document.getElementById("mod");
+        var img = document.getElementById("preImg");
+        var modalImg = document.getElementById("img1");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
     </body>
 </html>
 
